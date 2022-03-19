@@ -1,0 +1,146 @@
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+        background-color: burlywood;
+        margin: 0;
+        padding: 0;
+        
+        color:black;
+      }
+      .header{
+        overflow:hidden;
+        background-color: burlywood;
+        width:100%;
+        position:static;
+      }
+      .header .main a{
+        float:left;
+        color: white;
+        text-align: center;
+        padding:12px;
+        text-decoration:none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 0px;
+        padding-right: 50px;
+        padding-left: 50px;
+    
+        }
+        .header .active{
+          background-color: rgb(30, 23, 23);
+      }
+      .header a:hover{
+          background-color: rgb(35, 28, 25);
+          color:whitesmoke;
+      }
+      .navbar {
+        display: flex;
+        width: 100%;
+        box-shadow: 0 0 5px black;
+        text-align: center;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+      }
+  
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: white;
+        margin: 30px auto;
+        padding: 5px 30px;
+        width: 800px;
+        margin-top: 100px;
+        
+        
+      }
+  
+      .hr {
+        display: flex;
+        align-items: center;
+      }
+  
+      hr {
+        width: 30px;
+        height: 1px;
+        background: black;
+        margin: 0 15px;
+        
+        
+      }
+  
+      h2 {
+        font-size: 25px;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+  
+      .mission-txt {
+        font-size: 18px;
+        font-weight: 500px;
+        font-style: italic;
+        margin-top: 0;
+        
+      }
+  
+      div img {
+        width: 150px;
+        filter: drop-shadow(0 10px 5px burlywood);
+      }
+  
+      p {
+        text-align: justify;
+      }
+  
+      .faculties {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+  
+      .unit {
+        margin: 25px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .unit img {
+        border-radius: 100px;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+      }
+  
+      .unit p {
+        text-align: left;
+        margin: 2px;
+      }
+  
+      .unit p:first-of-type {
+        font-weight: bolder;
+        margin-bottom: 5px;
+      }
+  
+      @media screen and (max-width:820px) {
+        .wrapper {
+          width: 80%;
+          padding: 5px 30px;
+        }
+      }
+      #footer{
+        position: relative;
+        bottom: 0;
+        width: 1400px;
+        padding: 12px;
+        text-align: center;
+        color:white;
+        background-color: burlywood;
+    }
+    

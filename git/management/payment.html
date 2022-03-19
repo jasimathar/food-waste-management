@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+    body{
+        background-color: aquamarine;padding: 50px;
+    }
+    h1{
+        text-align: center;
+    
+    
+        box-sizing:border-box;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 100px 100px;
+        font-size: 17px;
+        padding:20px;
+    }
+    .container{
+        background-color: rgb(124, 143, 55);
+        padding: 15px 20px 15px 20px;
+        border-radius: 25px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea{
+        width: 90%;
+        padding: 12px;
+    }
+    .main heading{
+        text-align: center;
+    }
+    input[type="submit"]{
+        background-color: blue;
+        color: white;
+        padding: 12px 20px;
+        border:none;
+        border-radius: 4px;
+        cursor: grab;
+    }
+    hover{
+            color: #fff;;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+<h1>Payment Detail</h1>
+<p> Card Type:<select name="card_type" id="card_type">
+          <option value="">---select card_type</option>
+          <option value="visa">Visa</option>
+          <option value="rupay">rupay</option>
+          <option value="Mastercard">Mastercard</option>
+</select></p>
+<p>Card Number: <input type="number"name="card_Number"id="card_number"></p>
+<p>Expiry Date: <input type="date"name="Expiry date"id="Expiry date"></p>
+<p>CVV: <input type="password"name="CVV"id="CVV" maxlength="3" pattern="number">
+</p>
+<input type="Submit"value="Pay now">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+    .header{
+    overflow:hidden;
+   
+    width:100%;
+    position:static;
+  }
+  .header .main a{
+    float:left;
+    color: white;
+    text-align: center;
+    padding:12px;
+    text-decoration:none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    }
+    .header .active{
+      background-color:burlywood;
+  }
+  .header a:hover{
+      background-color: rgb(35, 28, 25);
+      color:whitesmoke;
+  }
+    body{
+       
+        font-family: 'Times New Roman', Times, serif;
+       
+        font-size: 17px;
+        
+        background-image: url("1920.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+        color: white;
+        
+    }
+    h1{
+        text-align: center;
+    
+    
+        box-sizing:border-box;
+    }
+    .container{
+        background-image: url("1920.jpg");
+        padding: 15px 20px 15px 20px;
+        border-radius: 25px;
+        margin-top: 150px;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    input[list],
+    
+    textarea{
+        width: 96.5%;
+        padding: 12px;
+        background-image: url("19604.jpg");
+        color: white;
+        
+    }
+    .main heading{
+        text-align: center;
+    }
+    input[type="submit"]{
+        background-color: blue;
+        color: white;
+        padding: 12px 20px;
+        border:none;
+        border-radius: 4px;
+        cursor: grab;
+    }
+    hover{
+            color: #fff;;
+        }
+        #footer{
+                position: relative;
+                bottom: 0;
+                width: 1400px;
+                padding: 12px;
+                text-align: center;
+                color:white;
+                background-color: burlywood;
+            }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="main">
+        <a href="mp.html">Home</a>
+        <a class="active" href="restaurant.html">Restaurant</a>
+        <a href="NGO.html">NGO's</a>
+        <a href="service.html">Services</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="contact1.html">Contact Us</a>
+    </div>
+    <div class="container">
+<h1>Restaurant Details</h1>
+<p> Restaurant Name:<input list="browsers" name="browser">
+    <datalist id="browsers">
+          <option value="Sigdi Restaurants and Banquets">Sigdi Restaurants and Banquets</option>
+          <option value="Lemon Tree Hotel">Lemon Tree Hotel</option>
+          <option value="Gazebo Garden Restaurant">Gazebo Garden Restaurant</option>
+          <option value="Hotel Veronica">Hotel Veronica</option>
+          <option value="Hampton by Hilton">Hampton by Hilton</option>
+          <option value="Sawans Gravies">Sawans Gravies</option>
+          <option value="WelcomeHotel Vadodra">WelcomeHotel Vadodra</option>
+          <option value="Elysian">Elysian</option>
+          <option value="Tansha Comfort Regency">Tansha Comfort Regency        </option>
+          <option value="Shagun Hotel">Shagun Hotel</option>
+          <option value="Hotel Yuvraj">Hotel Yuvraj</option>
+          <option value="Spice Nation Banquet">Spice Nation Banquet</option>
+
+</select></p>
+<p>Required food in(kg): <input type="number"name="Required food in(kg)" id="Required food in(kg)" required></p>
+<fieldset><legend>Food Type</legend>
+    <p> Veg: <input type="radio"name="Food Type"id="veg"> 
+        Non-veg: <input type="radio"name="Food Type"id="Non-veg"> 
+        All: <input type="radio"name="Food Type"id="All"> </p></p></fieldset>
+<p>No of children: <input type="number"name="No of children"id="No of children"></p>
+<p>Date: <input type="date"name="date"id="date"></p>
+<p> Adress: <textarea name="Adress"id="Adress"col="100"rows="8"></textarea></p>
+</p>
+<center>
+    <div id="buttonn">
+<input type="submit" onclick="but()">
+</div>
+</center>
+</div>
+<script>
+    function but(){
+        alert("Submitted Successfully");
+    }
+</script>
+<div id="footer">
+    Copyright &copy; 2022 Food Waste Managment
+</div>
+</body>
+</html>
